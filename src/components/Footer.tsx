@@ -301,19 +301,19 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="/privacy"
               className="text-xs text-ink-500 hover:text-gold-300 transition-colors duration-300"
             >
               Privacy Policy
             </a>
             <a
-              href="#"
+              href="/terms"
               className="text-xs text-ink-500 hover:text-gold-300 transition-colors duration-300"
             >
               Terms of Service
             </a>
             <a
-              href="#"
+              href="/sitemap.xml"
               className="text-xs text-ink-500 hover:text-gold-300 transition-colors duration-300"
             >
               Sitemap

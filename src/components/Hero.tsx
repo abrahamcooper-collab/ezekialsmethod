@@ -15,6 +15,9 @@ export default function Hero() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    if (typeof window !== "undefined" && !window.location.hash) {
+      window.scrollTo(0, 0);
+    }
     const timer = setTimeout(() => setMounted(true), 100);
     return () => clearTimeout(timer);
   }, []);

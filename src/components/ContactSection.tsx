@@ -190,7 +190,6 @@ export default function ContactSection() {
                       }))
                     }
                     placeholder={STEPS_CONFIG[currentStep].placeholder}
-                    autoFocus
                     className="w-full px-5 py-4 rounded-2xl bg-glass-light border-glass text-ink-50 placeholder-ink-500 focus:outline-none focus:border-gold-400/40 transition-all duration-300 text-lg"
                     onKeyDown={(e) => {
                       if (e.key === "Enter" && isValid()) {
