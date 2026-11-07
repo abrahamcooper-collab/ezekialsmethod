@@ -33,7 +33,7 @@ export default function StickyBar() {
         </a>
         <div className="w-px h-6 bg-white/10" />
         <a
-          href="#quest"
+          href="/#quest"
           className="group relative inline-flex items-center gap-2 gradient-gold text-ink-950 font-semibold text-sm px-5 py-2.5 rounded-full hover:shadow-gold transition-all duration-300 hover:scale-[1.03] overflow-hidden"
         >
           <span className="absolute inset-0 shimmer-bg animate-shimmer opacity-50" />

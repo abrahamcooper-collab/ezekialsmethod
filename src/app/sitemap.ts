@@ -28,7 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations",
     "/privacy",
     "/terms",
-    "/sitemap",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date("2026-01-01"),
@@ -52,3 +51,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticRoutes, ...serviceRoutes, ...locationRoutes];
 }
+

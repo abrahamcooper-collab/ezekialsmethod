@@ -61,7 +61,7 @@ export default function ExitIntentModal() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="#quest"
+              href="/#quest"
               onClick={closeModal}
               className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-base px-7 py-3.5 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden"
             >

@@ -66,15 +66,23 @@ export default function ContactSection() {
     return false;
   }, [currentStep, formData]);
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentStep < totalSteps - 1) {
       setCurrentStep((prev) => prev + 1);
     } else {
       setIsSubmitting(true);
-      setTimeout(() => {
+      try {
+        await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+      } catch (err) {
+        console.error("Submission error:", err);
+      } finally {
         setIsSubmitting(false);
         setIsSubmitted(true);
-      }, 1200);
+      }
     }
   };
 

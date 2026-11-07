@@ -79,13 +79,13 @@ const PROTOCOLS_FOOTER = [
 ];
 
 const EXPLORE_LINKS = [
-  { label: "Services", href: "#services" },
-  { label: "The Quest", href: "#quest" },
-  { label: "Process", href: "#process" },
-  { label: "Results", href: "#case-studies" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/services" },
+  { label: "The Quest", href: "/#quest" },
+  { label: "Process", href: "/#process" },
+  { label: "Results", href: "/#case-studies" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const TRUST_TAGS = [
@@ -96,10 +96,10 @@ const TRUST_TAGS = [
 ];
 
 const SOCIAL_LINKS = [
-  { icon: InstagramIcon, href: "#", label: "Instagram" },
-  { icon: TwitterIcon, href: "#", label: "Twitter" },
-  { icon: LinkedinIcon, href: "#", label: "LinkedIn" },
-  { icon: YoutubeIcon, href: "#", label: "YouTube" },
+  { icon: InstagramIcon, href: "https://instagram.com", label: "Instagram" },
+  { icon: TwitterIcon, href: "https://x.com", label: "Twitter" },
+  { icon: LinkedinIcon, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: YoutubeIcon, href: "https://youtube.com", label: "YouTube" },
 ];
 
 export default function Footer() {
@@ -122,7 +122,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="#quest"
+                href="/#quest"
                 className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-base px-8 py-4 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden"
               >
                 <span className="absolute inset-0 shimmer-bg animate-shimmer opacity-50" />
@@ -190,6 +190,8 @@ export default function Footer() {
                   <a
                     key={idx}
                     href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={item.label}
                     className="w-9 h-9 rounded-xl bg-glass-light border-glass flex items-center justify-center text-ink-300 hover:text-gold-300 hover:border-gold-400/30 transition-all duration-300"
                   >
