@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     "The Ezekiel Technique — Premium performance coaching in Hollywood, CA. Master acting exertion, vessel preservation, and high-stakes performance science. Train with the elite.",
   keywords:
     "performance coaching Hollywood, acting coach Los Angeles, exertion mastery, vessel preservation, high-stakes performance, performance science",
+  icons: {
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

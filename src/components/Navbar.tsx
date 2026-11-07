@@ -48,12 +48,14 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#top" className="flex items-center gap-3 group">
             <div className="relative">
-              <div className="w-10 h-10 rounded-xl gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform duration-300">
-                <span className="font-display text-xl font-bold text-ink-950">
-                  E
-                </span>
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-gold group-hover:scale-110 transition-transform duration-300 border border-gold-400/20 bg-ink-900 flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="The Ezekiel Technique"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="absolute inset-0 rounded-xl gradient-gold blur-md opacity-40 group-hover:opacity-70 transition-opacity duration-300" />
+              <div className="absolute inset-0 rounded-xl gradient-gold blur-md opacity-30 group-hover:opacity-60 transition-opacity duration-300 pointer-events-none" />
             </div>
             <div className="hidden sm:block">
               <div className="font-display text-lg font-bold text-ink-50 leading-none">
@@ -124,10 +126,12 @@ export default function Navbar() {
           <div className="absolute right-0 top-0 bottom-0 w-[85%] max-w-sm bg-ink-900 border-l border-white/5 p-6 animate-slide-right overflow-y-auto">
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl gradient-gold flex items-center justify-center">
-                  <span className="font-display text-xl font-bold text-ink-950">
-                    E
-                  </span>
+                <div className="w-10 h-10 rounded-xl overflow-hidden border border-gold-400/20 shadow-gold bg-ink-900 flex items-center justify-center">
+                  <img
+                    src="/logo.png"
+                    alt="The Ezekiel Technique"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <div className="font-display text-base font-bold text-ink-50">

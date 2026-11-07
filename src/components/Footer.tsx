@@ -148,10 +148,12 @@ export default function Footer() {
           {/* Column 1: Brand Info & Socials */}
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-gold flex items-center justify-center shadow-gold">
-                <span className="font-display text-xl font-bold text-ink-950">
-                  E
-                </span>
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-gold border border-gold-400/20 bg-ink-900 flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="The Ezekiel Technique"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <div className="font-display text-lg font-bold text-ink-50">
