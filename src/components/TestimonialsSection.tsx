@@ -13,15 +13,6 @@ interface Testimonial {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    name: "Aria Thompson",
-    role: "Theatre Director & Coach",
-    quote:
-      "I've been in this industry for twenty years and I send every serious actor to Ezekiel. The results are not incremental. They are transformational. This is the gold standard.",
-    rating: 5,
-    image:
-      "https://images.pexels.com/photos/8847179/pexels-photo-8847179.jpeg?auto=compress&cs=tinysrgb&h=200&w=200",
-  },
-  {
     name: "Marcus Whitfield",
     role: "Series Lead, Streaming Drama",
     quote:
@@ -66,10 +57,19 @@ const TESTIMONIALS: Testimonial[] = [
     image:
       "https://images.pexels.com/photos/8847168/pexels-photo-8847168.jpeg?auto=compress&cs=tinysrgb&h=200&w=200",
   },
+  {
+    name: "Aria Thompson",
+    role: "Theatre Director & Coach",
+    quote:
+      "I've been in this industry for twenty years and I send every serious actor to Ezekiel. The results are not incremental. They are transformational. This is the gold standard.",
+    rating: 5,
+    image:
+      "https://images.pexels.com/photos/8847179/pexels-photo-8847179.jpeg?auto=compress&cs=tinysrgb&h=200&w=200",
+  },
 ];
 
 export default function TestimonialsSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(5);
   const [isPaused, setIsPaused] = useState(false);
 
   const nextSlide = useCallback(() => {
@@ -87,7 +87,7 @@ export default function TestimonialsSection() {
   }, [isPaused, nextSlide]);
 
   const current = TESTIMONIALS[activeIndex];
-  const gridReviews = TESTIMONIALS.slice(1, 4);
+  const gridReviews = TESTIMONIALS.slice(0, 3);
 
   return (
     <section

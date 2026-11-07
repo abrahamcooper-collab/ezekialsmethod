@@ -254,7 +254,7 @@ export default function Footer() {
               <li className="flex items-start gap-2 text-sm text-ink-400">
                 <Mail className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
                 <a
-                  href="mailto:EzekielMethod@gmail.com"
+                  href="mailto:connect@ezekieltechnique.com"
                   className="hover:text-gold-300 transition-colors duration-300 break-all"
                 >
                   connect@ezekieltechnique.com

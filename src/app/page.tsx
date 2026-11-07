@@ -8,11 +8,13 @@ import ProcessSection from "@/components/ProcessSection";
 import WhySection from "@/components/WhySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
-import FaqSection from "@/components/FaqSection";
 import LocationSection from "@/components/LocationSection";
+import FaqSection from "@/components/FaqSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import StickyBar from "@/components/StickyBar";
+import Concierge from "@/components/Concierge";
+import ExitIntentModal from "@/components/ExitIntentModal";
 
 export default function Home() {
   return (
@@ -28,12 +30,14 @@ export default function Home() {
         <WhySection />
         <TestimonialsSection />
         <CaseStudiesSection />
-        <FaqSection />
         <LocationSection />
+        <FaqSection />
         <ContactSection />
       </main>
       <Footer />
       <StickyBar />
+      <Concierge />
+      <ExitIntentModal />
     </div>
   );
 }

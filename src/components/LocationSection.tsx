@@ -75,7 +75,7 @@ export default function LocationSection() {
                 <Navigation className="w-5 h-5 text-gold-400 shrink-0" />
                 <div>
                   <div className="font-semibold text-ink-50 text-sm">
-                    1938 Argyle Avenue, Hollywood, CA 90068
+                    Hollywood, CA 90068
                   </div>
                   <div className="text-xs text-ink-400">By appointment only</div>
                 </div>
