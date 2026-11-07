@@ -182,6 +182,16 @@ export default function ServicesSection() {
                           </li>
                         ))}
                       </ul>
+                      <div className="mt-4 pt-4 border-t border-white/5">
+                        <a
+                          href={`/services/${protocol.id}`}
+                          onClick={(e) => e.stopPropagation()}
+                          className="text-xs text-gold-400 hover:text-gold-300 font-semibold inline-flex items-center gap-1.5 transition-colors"
+                        >
+                          <span>Explore Full Syllabus & Outcomes</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </a>
+                      </div>
                     </div>
                   </div>
 

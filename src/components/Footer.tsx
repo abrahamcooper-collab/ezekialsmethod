@@ -209,7 +209,7 @@ export default function Footer() {
               {PROTOCOLS_FOOTER.map((item) => (
                 <li key={item.id}>
                   <a
-                    href="#services"
+                    href={`/services/${item.id}`}
                     className="text-sm text-ink-400 hover:text-gold-300 transition-colors duration-300"
                   >
                     {item.title}
