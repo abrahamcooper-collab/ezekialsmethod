@@ -64,7 +64,7 @@ export default function ServicesIndexPage() {
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.1] tracking-tight">
+          <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             Elite Protocols.{" "}
             <span className="text-gradient-gold">Measurable Mastery.</span>
           </h1>
@@ -95,7 +95,7 @@ export default function ServicesIndexPage() {
               return (
                 <div
                   key={service.id}
-                  className="group relative rounded-3xl bg-glass-strong border-glass p-8 lg:p-10 shadow-premium hover:border-gold-400/30 transition-all duration-500 flex flex-col justify-between overflow-hidden"
+                  className="group relative rounded-3xl bg-glass-strong border-glass p-6 sm:p-8 lg:p-10 shadow-premium hover:border-gold-400/30 transition-all duration-500 flex flex-col justify-between overflow-hidden"
                 >
                   <div className="absolute -top-16 -right-16 w-40 h-40 rounded-full bg-gold-400/5 blur-3xl group-hover:bg-gold-400/12 transition-all duration-700 pointer-events-none" />
 

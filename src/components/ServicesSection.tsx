@@ -89,7 +89,7 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="services" className="relative py-24 lg:py-32 noise-overlay">
+    <section id="services" className="relative py-16 sm:py-24 lg:py-32 noise-overlay">
       <div className="absolute inset-0 bg-ink-900" />
       <div className="absolute inset-0 bg-gradient-to-b from-ink-900 via-ink-850 to-ink-900" />
 
@@ -101,11 +101,11 @@ export default function ServicesSection() {
             What We Do
             <span className="h-px w-8 bg-gold-400/50" />
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.1] tracking-tight">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             Four protocols.{" "}
             <span className="text-gradient-gold">One transformation.</span>
           </h2>
-          <p className="mt-6 text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
             Each program is engineered to address a specific dimension of your
             performance. Together, they create a complete system for elite
             capability under pressure.
@@ -113,7 +113,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Protocols Grid */}
-        <div className="mt-16 grid md:grid-cols-2 gap-6">
+        <div className="mt-12 sm:mt-16 grid md:grid-cols-2 gap-4 sm:gap-6">
           {PROTOCOLS.map((protocol) => {
             const Icon = protocol.icon;
             const isExpanded = expandedId === protocol.id;
@@ -131,16 +131,16 @@ export default function ServicesSection() {
                 {/* Glow ambient background element */}
                 <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-gold-400/5 blur-3xl group-hover:bg-gold-400/10 transition-all duration-700 pointer-events-none" />
 
-                <div className="relative p-8 lg:p-10">
+                <div className="relative p-6 sm:p-8 lg:p-10">
                   {/* Top Row: Icon + Large Number */}
-                  <div className="flex items-start justify-between mb-6">
+                  <div className="flex items-start justify-between mb-5 sm:mb-6">
                     <div className="relative">
-                      <div className="w-14 h-14 rounded-2xl bg-gold-400/10 border border-gold-400/20 flex items-center justify-center group-hover:bg-gold-400/20 transition-all duration-500 group-hover:scale-110">
-                        <Icon className="w-7 h-7 text-gold-400" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gold-400/10 border border-gold-400/20 flex items-center justify-center group-hover:bg-gold-400/20 transition-all duration-500 group-hover:scale-110">
+                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-gold-400" />
                       </div>
                       <div className="absolute inset-0 rounded-2xl bg-gold-400/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </div>
-                    <span className="font-display text-5xl font-bold text-ink-700 group-hover:text-gold-400/20 transition-colors duration-500">
+                    <span className="font-display text-4xl sm:text-5xl font-bold text-ink-700 group-hover:text-gold-400/20 transition-colors duration-500">
                       {protocol.number}
                     </span>
                   </div>

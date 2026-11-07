@@ -413,7 +413,7 @@ export default async function ServicePage({
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] tracking-tight">
+          <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             {service.title}
           </h1>
 
@@ -472,7 +472,7 @@ export default async function ServicePage({
 
         {/* Highlights Section */}
         <section className="px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto mb-20">
-          <div className="rounded-3xl bg-glass-strong border-glass p-8 lg:p-10 shadow-premium">
+          <div className="rounded-3xl bg-glass-strong border-glass p-6 sm:p-8 lg:p-10 shadow-premium">
             <h2 className="font-display text-2xl font-bold text-ink-50 mb-6 flex items-center gap-2">
               <Shield className="w-6 h-6 text-gold-400" />
               Protocol Architecture & Highlights

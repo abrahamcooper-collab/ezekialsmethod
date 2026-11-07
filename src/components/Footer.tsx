@@ -109,21 +109,21 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10">
         {/* Pre-Footer Action Banner */}
-        <div className="rounded-3xl bg-gradient-to-r from-gold-400/10 via-gold-400/5 to-transparent border border-gold-400/20 p-8 lg:p-12 mb-16 text-center overflow-hidden relative">
+        <div className="rounded-3xl bg-gradient-to-r from-gold-400/10 via-gold-400/5 to-transparent border border-gold-400/20 p-6 sm:p-8 lg:p-12 mb-12 sm:mb-16 text-center overflow-hidden relative">
           <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-gold-400/10 blur-3xl pointer-events-none" />
 
           <div className="relative z-10">
-            <h3 className="font-display text-3xl md:text-4xl font-bold text-ink-50 mb-4">
+            <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-ink-50 mb-3 sm:mb-4">
               Your edge is one decision away
             </h3>
-            <p className="text-ink-300 max-w-xl mx-auto mb-6">
+            <p className="text-ink-300 max-w-xl mx-auto mb-6 text-sm sm:text-base">
               Join 1,200+ performers who transformed their craft with The Ezekiel
               Technique.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="/#quest"
-                className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-base px-8 py-4 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden"
+                className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden"
               >
                 <span className="absolute inset-0 shimmer-bg animate-shimmer opacity-50" />
                 <span className="relative z-10 flex items-center gap-2">
@@ -134,7 +134,7 @@ export default function Footer() {
 
               <a
                 href="tel:4246539123"
-                className="inline-flex items-center justify-center gap-2 bg-glass-light border-glass text-ink-50 font-semibold text-base px-8 py-4 rounded-full hover:border-gold-400/40 hover:bg-gold-400/5 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 bg-glass-light border-glass text-ink-50 font-semibold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full hover:border-gold-400/40 hover:bg-gold-400/5 transition-all duration-300"
               >
                 <Phone className="w-5 h-5 text-gold-400" />
                 (424) 653-9123
@@ -144,9 +144,9 @@ export default function Footer() {
         </div>
 
         {/* Main Footer Links Columns */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
           {/* Column 1: Brand Info & Socials */}
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl overflow-hidden shadow-gold border border-gold-400/20 bg-ink-900 flex items-center justify-center">
                 <img
@@ -241,7 +241,7 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Contact */}
-          <div>
+          <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <h4 className="text-sm font-semibold text-ink-50 mb-4 uppercase tracking-wider">
               Contact
             </h4>

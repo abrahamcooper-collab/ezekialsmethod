@@ -135,7 +135,7 @@ export default async function LocationPage({
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] tracking-tight">
+          <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             Perform at the absolute edge in{" "}
             <span className="text-gradient-gold">{area.name}</span>
           </h1>
@@ -168,7 +168,7 @@ export default async function LocationPage({
 
         {/* Location Highlights Card */}
         <section className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto mb-20">
-          <div className="rounded-3xl bg-glass-strong border-glass p-8 lg:p-12 shadow-premium">
+          <div className="rounded-3xl bg-glass-strong border-glass p-6 sm:p-8 lg:p-12 shadow-premium">
             <div className="flex items-center justify-between border-b border-white/5 pb-6 mb-8">
               <div>
                 <span className="text-xs text-gold-400 uppercase tracking-widest font-semibold">

@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="relative py-24 lg:py-32 noise-overlay overflow-hidden"
+      className="relative py-16 sm:py-24 lg:py-32 noise-overlay overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-ink-900 to-ink-950" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gold-400/5 blur-[120px] pointer-events-none" />
@@ -105,11 +105,11 @@ export default function TestimonialsSection() {
             Client Voices
             <span className="h-px w-8 bg-gold-400/50" />
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.1] tracking-tight">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             What performers{" "}
             <span className="text-gradient-gold">say</span>
           </h2>
-          <p className="mt-6 text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
             247 five-star reviews from actors, speakers, and performers who
             transformed their craft.
           </p>
@@ -117,29 +117,29 @@ export default function TestimonialsSection() {
 
         {/* Featured Testimonial Card Carousel */}
         <div
-          className="mt-14 relative"
+          className="mt-10 sm:mt-14 relative"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <div className="relative rounded-3xl bg-glass-strong border-glass p-8 lg:p-12 shadow-premium overflow-hidden">
+          <div className="relative rounded-3xl bg-glass-strong border-glass p-6 sm:p-8 lg:p-12 shadow-premium overflow-hidden">
             {/* Giant decorative quotation mark */}
-            <div className="absolute top-6 right-8 opacity-10 pointer-events-none">
-              <Quote className="w-24 h-24 text-gold-400" />
+            <div className="absolute top-4 sm:top-6 right-6 sm:right-8 opacity-10 pointer-events-none">
+              <Quote className="w-16 h-16 sm:w-24 sm:h-24 text-gold-400" />
             </div>
 
             <div key={activeIndex} className="animate-fade-in">
               {/* Star Rating */}
-              <div className="flex items-center gap-1 mb-6">
+              <div className="flex items-center gap-1 mb-5 sm:mb-6">
                 {[...Array(current.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-5 h-5 text-gold-400 fill-gold-400"
+                    className="w-4 sm:w-5 h-4 sm:h-5 text-gold-400 fill-gold-400"
                   />
                 ))}
               </div>
 
               {/* Quote text */}
-              <p className="font-display text-2xl lg:text-3xl text-ink-50 leading-relaxed font-medium mb-8">
+              <p className="font-display text-lg sm:text-2xl lg:text-3xl text-ink-50 leading-relaxed font-medium mb-6 sm:mb-8">
                 &ldquo;{current.quote}&rdquo;
               </p>
 

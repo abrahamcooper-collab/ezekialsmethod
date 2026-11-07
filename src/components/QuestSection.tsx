@@ -381,7 +381,7 @@ export default function QuestSection() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
                 <a
                   href="#contact"
-                  className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-base px-8 py-4 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden w-full sm:w-auto text-center"
+                  className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden w-full sm:w-auto text-center"
                 >
                   <span className="absolute inset-0 shimmer-bg animate-shimmer opacity-50" />
                   <span className="relative z-10 flex items-center gap-2">
@@ -392,7 +392,7 @@ export default function QuestSection() {
 
                 <a
                   href="tel:4246539123"
-                  className="inline-flex items-center justify-center gap-2 bg-glass-light border-glass text-ink-50 font-semibold text-base px-8 py-4 rounded-full hover:border-gold-400/40 hover:bg-gold-400/5 transition-all duration-300 w-full sm:w-auto text-center"
+                  className="inline-flex items-center justify-center gap-2 bg-glass-light border-glass text-ink-50 font-semibold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full hover:border-gold-400/40 hover:bg-gold-400/5 transition-all duration-300 w-full sm:w-auto text-center"
                 >
                   <Phone className="w-5 h-5 text-gold-400" />
                   Call (424) 653-9123
@@ -409,7 +409,7 @@ export default function QuestSection() {
             </div>
           ) : (
             /* Questions View */
-            <div className="p-8 lg:p-12">
+            <div className="p-5 sm:p-8 lg:p-12">
               {/* Step indicator header */}
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-2">

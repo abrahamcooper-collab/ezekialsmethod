@@ -69,11 +69,11 @@ export default function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-16 sm:pb-20 w-full">
         <div className="max-w-3xl">
           {/* Review badge */}
           <div
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-glass-light border-glass mb-6 transition-all duration-700 ${
+            className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-glass-light border-glass mb-6 transition-all duration-700 ${
               mounted
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"
@@ -94,7 +94,7 @@ export default function Hero() {
 
           {/* Heading */}
           <h1
-            className={`font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[1.05] tracking-tight transition-all duration-700 delay-100 ${
+            className={`font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[1.08] sm:leading-[1.05] tracking-tight transition-all duration-700 delay-100 ${
               mounted
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -107,7 +107,7 @@ export default function Hero() {
 
           {/* Subtext */}
           <p
-            className={`mt-6 text-lg sm:text-xl text-ink-300 leading-relaxed max-w-2xl transition-all duration-700 delay-300 ${
+            className={`mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-ink-300 leading-relaxed max-w-2xl transition-all duration-700 delay-300 ${
               mounted
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -121,7 +121,7 @@ export default function Hero() {
 
           {/* CTAs */}
           <div
-            className={`mt-10 flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-500 ${
+            className={`mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3.5 sm:gap-4 transition-all duration-700 delay-500 ${
               mounted
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -129,27 +129,27 @@ export default function Hero() {
           >
             <a
               href="#quest"
-              className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-base px-8 py-4 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden"
+              className="group relative inline-flex items-center justify-center gap-2 gradient-gold text-ink-950 font-semibold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] overflow-hidden"
             >
               <span className="absolute inset-0 shimmer-bg animate-shimmer opacity-50" />
               <span className="relative z-10 flex items-center gap-2">
-                <Sparkles className="w-5 h-5 fill-ink-950" />
+                <Sparkles className="w-4 sm:w-5 h-4 sm:h-5 fill-ink-950" />
                 Begin Your Quest
               </span>
             </a>
 
             <a
               href="tel:4246539123"
-              className="group inline-flex items-center justify-center gap-2 bg-glass-light border-glass text-ink-50 font-semibold text-base px-8 py-4 rounded-full hover:border-gold-400/40 hover:bg-gold-400/5 transition-all duration-300"
+              className="group inline-flex items-center justify-center gap-2 bg-glass-light border-glass text-ink-50 font-semibold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full hover:border-gold-400/40 hover:bg-gold-400/5 transition-all duration-300"
             >
-              <Phone className="w-5 h-5 text-gold-400 group-hover:scale-110 transition-transform duration-300" />
+              <Phone className="w-4 sm:w-5 h-4 sm:h-5 text-gold-400 group-hover:scale-110 transition-transform duration-300" />
               <span>Call (424) 653-9123</span>
             </a>
           </div>
 
           {/* Stats Bar */}
           <div
-            className={`mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 transition-all duration-700 delay-700 ${
+            className={`mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 transition-all duration-700 delay-700 ${
               mounted
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"

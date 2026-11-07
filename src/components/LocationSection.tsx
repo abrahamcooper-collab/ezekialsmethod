@@ -26,7 +26,7 @@ const LOCATION_FACTS = [
 
 export default function LocationSection() {
   return (
-    <section className="relative py-24 lg:py-32 noise-overlay">
+    <section className="relative py-16 sm:py-24 lg:py-32 noise-overlay">
       <div className="absolute inset-0 bg-gradient-to-b from-ink-900 to-ink-950" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,11 +37,11 @@ export default function LocationSection() {
             Hollywood, California
             <span className="h-px w-8 bg-gold-400/50" />
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.1] tracking-tight">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             Based in the heart of{" "}
             <span className="text-gradient-gold">Hollywood</span>
           </h2>
-          <p className="mt-6 text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
             Our studio sits in the epicentre of the entertainment world —
             surrounded by the studios, theatres, and stages where our clients
             perform.
@@ -49,9 +49,9 @@ export default function LocationSection() {
         </div>
 
         {/* Content 2-Column Grid */}
-        <div className="mt-16 grid lg:grid-cols-2 gap-8 items-stretch">
+        <div className="mt-12 sm:mt-16 grid lg:grid-cols-2 gap-8 items-stretch">
           {/* Left Column: Visual Map / Theatre Image */}
-          <div className="relative h-full min-h-[420px] rounded-3xl overflow-hidden shadow-premium group">
+          <div className="relative h-full min-h-[300px] sm:min-h-[420px] rounded-3xl overflow-hidden shadow-premium group">
             <img
               src="https://images.pexels.com/photos/17727343/pexels-photo-17727343.jpeg?auto=compress&cs=tinysrgb&w=940"
               alt="Hollywood El Capitan Studio Location"

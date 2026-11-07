@@ -72,7 +72,7 @@ export default function CaseStudiesSection() {
   const current = CASE_STUDIES[activeTab];
 
   return (
-    <section id="case-studies" className="relative py-24 lg:py-32 noise-overlay">
+    <section id="case-studies" className="relative py-16 sm:py-24 lg:py-32 noise-overlay">
       <div className="absolute inset-0 bg-gradient-to-b from-ink-950 via-ink-900 to-ink-850" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,22 +83,22 @@ export default function CaseStudiesSection() {
             Case Studies
             <span className="h-px w-8 bg-gold-400/50" />
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.1] tracking-tight">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             Proof, not <span className="text-gradient-gold">promises</span>
           </h2>
-          <p className="mt-6 text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-ink-300 leading-relaxed max-w-2xl mx-auto">
             Detailed accounts of real transformations. The problem, the protocol,
             and the measurable results.
           </p>
         </div>
 
         {/* Category Tabs */}
-        <div className="mt-12 flex flex-wrap justify-center gap-2">
+        <div className="mt-8 sm:mt-12 flex flex-wrap justify-center gap-2">
           {CASE_STUDIES.map((study, idx) => (
             <button
               key={study.name}
               onClick={() => setActiveTab(idx)}
-              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
+              className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 cursor-pointer ${
                 activeTab === idx
                   ? "gradient-gold text-ink-950 shadow-gold"
                   : "bg-glass-light border-glass text-ink-300 hover:text-gold-300 hover:border-gold-400/25"

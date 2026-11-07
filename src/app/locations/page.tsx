@@ -130,7 +130,7 @@ export default function LocationsIndexPage() {
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.1] tracking-tight">
+          <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-ink-50 leading-[1.15] sm:leading-[1.1] tracking-tight">
             Based in Hollywood.{" "}
             <span className="text-gradient-gold">Calibrated Everywhere.</span>
           </h1>
@@ -159,7 +159,7 @@ export default function LocationsIndexPage() {
             {AREAS_LIST.map((area) => (
               <div
                 key={area.slug}
-                className="group relative rounded-3xl bg-glass-strong border-glass p-8 shadow-premium hover:border-gold-400/30 transition-all duration-500 flex flex-col justify-between overflow-hidden"
+                className="group relative rounded-3xl bg-glass-strong border-glass p-6 sm:p-8 shadow-premium hover:border-gold-400/30 transition-all duration-500 flex flex-col justify-between overflow-hidden"
               >
                 <div className="absolute -top-16 -right-16 w-36 h-36 rounded-full bg-gold-400/5 blur-2xl group-hover:bg-gold-400/12 transition-all duration-700 pointer-events-none" />
 

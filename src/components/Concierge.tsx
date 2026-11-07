@@ -183,24 +183,24 @@ export default function Concierge() {
       {/* Floating Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-2xl gradient-gold flex items-center justify-center shadow-gold-lg transition-all duration-300 hover:scale-110 cursor-pointer ${
+        className={`fixed bottom-5 sm:bottom-6 right-4 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl gradient-gold flex items-center justify-center shadow-gold-lg transition-all duration-300 hover:scale-110 cursor-pointer ${
           isOpen ? "rotate-90" : ""
         }`}
         aria-label="AI Assistant"
       >
         {isOpen ? (
-          <X className="w-6 h-6 text-ink-950" />
+          <X className="w-5 sm:w-6 h-5 sm:h-6 text-ink-950" />
         ) : (
-          <MessageCircle className="w-6 h-6 text-ink-950" />
+          <MessageCircle className="w-5 sm:w-6 h-5 sm:h-6 text-ink-950" />
         )}
         {!isOpen && (
-          <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-accent-500 border-2 border-ink-950 animate-pulse" />
+          <span className="absolute -top-1 -right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-accent-500 border-2 border-ink-950 animate-pulse" />
         )}
       </button>
 
       {/* Floating Chat Modal */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-[calc(100vw-3rem)] max-w-sm h-[520px] max-h-[70vh] flex flex-col rounded-3xl bg-glass-strong border-glass shadow-premium overflow-hidden animate-fade-up">
+        <div className="fixed bottom-20 sm:bottom-24 right-3 sm:right-6 z-50 w-[calc(100vw-1.5rem)] sm:w-[calc(100vw-3rem)] max-w-sm h-[480px] sm:h-[520px] max-h-[75vh] flex flex-col rounded-3xl bg-glass-strong border-glass shadow-premium overflow-hidden animate-fade-up">
           {/* Header */}
           <div className="p-4 border-b border-white/5 flex items-center gap-3">
             <div className="relative">

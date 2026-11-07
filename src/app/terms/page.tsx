@@ -38,7 +38,7 @@ export default function TermsOfServicePage() {
                 Studio Standards
               </span>
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl font-bold text-ink-50 mb-4">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-ink-50 mb-4">
               Terms & Studio Protocols
             </h1>
             <p className="text-sm text-ink-400">
@@ -46,7 +46,7 @@ export default function TermsOfServicePage() {
             </p>
           </div>
 
-          <div className="rounded-3xl bg-glass-strong border-glass p-8 lg:p-12 shadow-premium space-y-8 text-ink-200 leading-relaxed text-sm">
+          <div className="rounded-3xl bg-glass-strong border-glass p-6 sm:p-8 lg:p-12 shadow-premium space-y-8 text-ink-200 leading-relaxed text-sm">
             <section>
               <h2 className="font-display text-xl font-bold text-ink-50 mb-3 flex items-center gap-2">
                 <Award className="w-5 h-5 text-gold-400" />

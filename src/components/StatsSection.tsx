@@ -73,21 +73,21 @@ function StatCard({ stat }: { stat: StatItem }) {
 
   return (
     <div ref={cardRef} className="relative group">
-      <div className="relative p-8 rounded-2xl bg-glass-light border-glass hover-lift hover:border-gold-400/30 transition-all duration-500 overflow-hidden h-full flex flex-col justify-between">
+      <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl bg-glass-light border-glass hover-lift hover:border-gold-400/30 transition-all duration-500 overflow-hidden h-full flex flex-col justify-between">
         {/* Ambient glow behind card on hover */}
         <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-gold-400/5 blur-2xl group-hover:bg-gold-400/10 transition-all duration-500 pointer-events-none" />
 
         <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-gold-400/10 border border-gold-400/20 flex items-center justify-center shrink-0">
-              <Icon className="w-5 h-5 text-gold-400" />
+          <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gold-400/10 border border-gold-400/20 flex items-center justify-center shrink-0">
+              <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" />
             </div>
-            <div className="text-4xl md:text-5xl font-display font-bold text-gradient-gold tabular-nums">
+            <div className="text-2xl sm:text-3xl md:text-5xl font-display font-bold text-gradient-gold tabular-nums">
               {animatedValue}
               {stat.suffix}
             </div>
           </div>
-          <div className="text-sm text-ink-300 font-medium">{stat.label}</div>
+          <div className="text-xs sm:text-sm text-ink-300 font-medium">{stat.label}</div>
         </div>
       </div>
     </div>
@@ -96,23 +96,23 @@ function StatCard({ stat }: { stat: StatItem }) {
 
 export default function StatsSection() {
   return (
-    <section className="relative py-24 lg:py-32 noise-overlay">
+    <section className="relative py-16 sm:py-24 lg:py-32 noise-overlay">
       <div className="absolute inset-0 bg-gradient-to-b from-ink-950 to-ink-900" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <span className="text-gold-400 text-xs font-semibold tracking-[0.3em] uppercase">
             By the Numbers
           </span>
-          <h2 className="mt-4 font-display text-3xl md:text-5xl font-bold text-ink-50 tracking-tight">
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl font-bold text-ink-50 tracking-tight">
             A track record built on{" "}
             <span className="text-gradient-gold">results</span>
           </h2>
         </div>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
           {STATS_DATA.map((stat) => (
             <StatCard key={stat.label} stat={stat} />
           ))}

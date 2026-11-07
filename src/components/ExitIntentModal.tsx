@@ -44,7 +44,7 @@ export default function ExitIntentModal() {
           <X className="w-4 h-4" />
         </button>
 
-        <div className="p-8 lg:p-10 text-center">
+        <div className="p-6 sm:p-8 lg:p-10 text-center">
           <div className="inline-flex w-16 h-16 rounded-2xl gradient-gold items-center justify-center mb-6 animate-pulse-glow shadow-gold">
             <Sparkles className="w-8 h-8 text-ink-950" />
           </div>

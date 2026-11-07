@@ -130,8 +130,19 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
     };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileMenuOpen(false);
+        setServicesDropdownOpen(false);
+        setLocationsDropdownOpen(false);
+      }
+    };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   useEffect(() => {
@@ -396,10 +407,10 @@ export default function Navbar() {
           </nav>
 
           {/* Action CTAs */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <a
               href="tel:4246539123"
-              className="hidden md:flex items-center gap-2 text-sm text-ink-100 hover:text-gold-300 transition-colors duration-300 group"
+              className="hidden xl:flex items-center gap-2 text-sm text-ink-100 hover:text-gold-300 transition-colors duration-300 group"
             >
               <span className="w-9 h-9 rounded-full border-glass bg-glass-light flex items-center justify-center group-hover:border-gold-400/40 transition-colors duration-300">
                 <Phone className="w-4 h-4 text-gold-400" />
@@ -409,11 +420,11 @@ export default function Navbar() {
 
             <a
               href="/#quest"
-              className="hidden sm:inline-flex gradient-gold text-ink-950 font-semibold text-sm px-5 py-2.5 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] relative overflow-hidden group"
+              className="hidden sm:inline-flex gradient-gold text-ink-950 font-semibold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-full hover:shadow-gold-lg transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] relative overflow-hidden group"
             >
               <span className="absolute inset-0 shimmer-bg animate-shimmer opacity-50" />
               <span className="relative z-10 flex items-center gap-1.5">
-                <Zap className="w-4 h-4 fill-ink-950" />
+                <Zap className="w-3.5 sm:w-4 h-3.5 sm:h-4 fill-ink-950" />
                 Begin Your Quest
               </span>
             </a>
@@ -422,7 +433,8 @@ export default function Navbar() {
             <button
               onClick={() => setMobileMenuOpen(true)}
               className="lg:hidden w-10 h-10 rounded-xl border-glass bg-glass-light flex items-center justify-center text-ink-100 hover:text-gold-300 transition-colors duration-300 cursor-pointer"
-              aria-label="Open menu"
+              aria-label="Open navigation menu"
+              aria-expanded={mobileMenuOpen}
             >
               <Menu className="w-5 h-5" />
             </button>
@@ -437,7 +449,7 @@ export default function Navbar() {
             className="absolute inset-0 bg-ink-950/80 backdrop-blur-md animate-fade-in"
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="absolute right-0 top-0 bottom-0 w-[88%] max-w-sm bg-ink-900 border-l border-white/5 p-6 animate-slide-right overflow-y-auto">
+          <div className="absolute right-0 top-0 bottom-0 w-[88%] max-w-sm bg-ink-900 border-l border-white/5 p-5 sm:p-6 animate-slide-right overflow-y-auto overscroll-contain">
             {/* Header */}
             <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/5">
               <div className="flex items-center gap-3">
