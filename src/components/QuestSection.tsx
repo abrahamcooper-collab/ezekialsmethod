@@ -41,14 +41,14 @@ const QUESTIONS: Question[] = [
         desc: "Keynotes, presentations, leadership",
       },
       {
-        label: "Music Performance",
-        value: "music",
-        desc: "Live vocals, instrumental, touring",
+        label: "Comedy Performance",
+        value: "comedy",
+        desc: "Stand-up, improv, hosting, and more",
       },
       {
         label: "Other Performance",
         value: "other",
-        desc: "Dance, comedy, athletics, and more",
+        desc: "Athletics, and more",
       },
     ],
   },
@@ -76,6 +76,16 @@ const QUESTIONS: Question[] = [
         label: "Specific Event",
         value: "high-stakes",
         desc: "Nail an audition, keynote, or performance",
+      },
+      {
+        label: "Anxiety",
+        value: "anxiety",
+        desc: "Overcome performance anxiety",
+      },
+      {
+        label: "Stage Fright",
+        value: "stage-fright",
+        desc: "Conquer stage fright",
       },
     ],
   },
@@ -229,17 +239,17 @@ export default function QuestSection() {
     answers.experience === "emerging"
       ? "Foundation"
       : answers.experience === "working"
-      ? "Professional"
-      : answers.experience === "established"
-      ? "Advanced"
-      : "Elite";
+        ? "Professional"
+        : answers.experience === "established"
+          ? "Advanced"
+          : "Elite";
 
   const formatText =
     answers.format === "in-person"
       ? "In-Person · Hollywood Studio"
       : answers.format === "remote"
-      ? "Remote · Live Video"
-      : "Hybrid";
+        ? "Remote · Live Video"
+        : "Hybrid";
 
   return (
     <section
@@ -416,13 +426,12 @@ export default function QuestSection() {
                   {QUESTIONS.map((_, idx) => (
                     <div
                       key={idx}
-                      className={`h-2 rounded-full transition-all duration-300 ${
-                        idx === currentStep
-                          ? "w-8 gradient-gold"
-                          : idx < currentStep
+                      className={`h-2 rounded-full transition-all duration-300 ${idx === currentStep
+                        ? "w-8 gradient-gold"
+                        : idx < currentStep
                           ? "w-2 bg-gold-400/40"
                           : "w-2 bg-ink-600"
-                      }`}
+                        }`}
                     />
                   ))}
                 </div>
@@ -447,11 +456,10 @@ export default function QuestSection() {
                       <button
                         key={opt.value}
                         onClick={() => selectOption(opt.value)}
-                        className={`group relative text-left p-5 rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer ${
-                          isSelected
-                            ? "bg-gold-400/10 border-gold-400/40 shadow-gold"
-                            : "bg-glass-light border-glass hover:border-gold-400/25 hover:bg-gold-400/5"
-                        }`}
+                        className={`group relative text-left p-5 rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer ${isSelected
+                          ? "bg-gold-400/10 border-gold-400/40 shadow-gold"
+                          : "bg-glass-light border-glass hover:border-gold-400/25 hover:bg-gold-400/5"
+                          }`}
                         style={{
                           animationDelay: `${optIdx * 80}ms`,
                         }}
@@ -468,11 +476,10 @@ export default function QuestSection() {
                             )}
                           </div>
                           <div
-                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300 shrink-0 mt-0.5 ${
-                              isSelected
-                                ? "border-gold-400 bg-gold-400"
-                                : "border-ink-500 group-hover:border-gold-400/50"
-                            }`}
+                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300 shrink-0 mt-0.5 ${isSelected
+                              ? "border-gold-400 bg-gold-400"
+                              : "border-ink-500 group-hover:border-gold-400/50"
+                              }`}
                           >
                             {isSelected && (
                               <Check className="w-3.5 h-3.5 text-ink-950 stroke-[3]" />
@@ -489,11 +496,10 @@ export default function QuestSection() {
                   <button
                     onClick={goBack}
                     disabled={currentStep === 0}
-                    className={`flex items-center gap-2 text-sm font-medium transition-all duration-300 ${
-                      currentStep === 0
-                        ? "text-ink-600 cursor-not-allowed"
-                        : "text-ink-300 hover:text-gold-300 cursor-pointer"
-                    }`}
+                    className={`flex items-center gap-2 text-sm font-medium transition-all duration-300 ${currentStep === 0
+                      ? "text-ink-600 cursor-not-allowed"
+                      : "text-ink-300 hover:text-gold-300 cursor-pointer"
+                      }`}
                   >
                     <ArrowLeft className="w-4 h-4" />
                     Back
